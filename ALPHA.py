@@ -82,7 +82,7 @@ def test(model = 1, episodes= 1000, times  = 1):
                 total_reward[epsd] += reward 
                 
                 
-                
+                Qagent.learning(action, reward,state,next_state)
 
                             
                 if cnt % 5 ==0 and sof > 0:
@@ -113,7 +113,7 @@ def test(model = 1, episodes= 1000, times  = 1):
         
         
 length = 200
-times = 10
+times = 1
 M=[0 for i in range(length)]
 S=[0 for i in range(length)]
 N=[0 for i in range(length)]
